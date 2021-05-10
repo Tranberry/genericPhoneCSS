@@ -99,4 +99,132 @@ body {
   -webkit-filter: invert(1);
           filter: invert(1);
   margin-bottom: -0.2ch;
+}
+
+.screen-content {
+  margin: 0.3ch;
+  height: 52ch;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.screen-content::-webkit-scrollbar {
+  width: 6px;
+  /* width of the entire scrollbar */
+  height: 6px;
+}
+.screen-content::-webkit-scrollbar-track {
+  background: var(--color-hw-900);
+  /* color of the tracking area */
+}
+.screen-content::-webkit-scrollbar-thumb {
+  background-color: var(--color-hw-900);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid var(--color-phone-top-bar);
+  /* creates padding around scroll thumb */
+}
+.screen-content::-webkit-scrollbar-corner {
+  background-color: var(--color-hw-900);
+}
+.screen-content p {
+  margin: 0;
+}
+.screen-content .pc-name {
+  font-weight: 600;
+  display: inline;
+  font-size: 1.2em;
+}
+.screen-content .pc-name::after {
+  content: ", ";
+}
+.screen-content .pc-age {
+  display: inline-block;
+  width: 55%;
+}
+.screen-content .pc-stat {
+  background-color: #072225;
+  color: #ffe5db;
+  padding-right: 0.2ch;
+  border-radius: 0.4ch;
+  text-align: center;
+  font-weight: 900;
+  display: inline-block;
+  margin-bottom: 0.4ch;
+  font-family: consolas, monospace;
+  font-size: 1.4em;
+}
+.screen-content .pc-combat::before {
+  content: "COM ";
+  font-weight: 500;
+  background-color: #2b2b2b;
+  border-radius: 0.4ch;
+  margin-right: 0.2ch;
+  padding: 0 0.2ch;
+  z-index: -1;
+  display: inline-block;
+}
+.screen-content .pc-dex::before {
+  content: "DEX ";
+  font-weight: 500;
+  background-color: #2b2b2b;
+  border-radius: 0.4ch;
+  margin-right: 0.2ch;
+  padding: 0 0.2ch;
+  z-index: -1;
+  display: inline-block;
+}
+.screen-content .pc-int::before {
+  content: "INT ";
+  font-weight: 500;
+  background-color: #2b2b2b;
+  border-radius: 0.4ch;
+  margin-right: 0.2ch;
+  padding: 0 0.2ch;
+  z-index: -1;
+  display: inline-block;
+}
+.screen-content .pc-luck::before {
+  content: "LCK ";
+  font-weight: 500;
+  background-color: #2b2b2b;
+  border-radius: 0.4ch;
+  margin-right: 0.2ch;
+  padding: 0 0.2ch;
+  z-index: -1;
+  display: inline-block;
+}
+.screen-content .pc-sta::before {
+  content: "STM ";
+  font-weight: 500;
+  background-color: #2b2b2b;
+  border-radius: 0.4ch;
+  margin-right: 0.2ch;
+  padding: 0 0.2ch;
+  z-index: -1;
+  display: inline-block;
+}
+.screen-content .pc-str::before {
+  content: "STR ";
+  font-weight: 500;
+  background-color: #2b2b2b;
+  border-radius: 0.4ch;
+  margin-right: 0.2ch;
+  padding: 0 0.2ch;
+  z-index: -1;
+  display: inline-block;
+}
+.screen-content .pc-trait {
+  font-family: consolas, monospace;
+  font-size: 1.2em;
+  background-color: #6aa18f;
+  display: inline-block;
+  color: black;
+  padding: 0.2ch 0.5ch;
+  border-radius: 0.4ch;
+  font-weight: 600;
+}
+.screen-content .pc-desc {
+  margin-top: 1ch;
 }/*# sourceMappingURL=style.css.map */

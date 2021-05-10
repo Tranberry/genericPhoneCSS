@@ -111,3 +111,136 @@ body {
     margin-bottom: -0.2ch;
   }
 }
+.screen-content {
+  margin: 0.3ch;
+  height: 52ch;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 6px; /* width of the entire scrollbar */
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--color-hw-900); /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-hw-900); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid var(--color-phone-top-bar); /* creates padding around scroll thumb */
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: var(--color-hw-900);
+  }
+
+  p {
+    margin: 0;
+  }
+  .pc-name {
+    font-weight: 600;
+    display: inline;
+    font-size: 1.2em;
+
+    &::after {
+      content: ', ';
+    }
+  }
+  .pc-age {
+    display: inline-block;
+    width: 55%;
+  }
+  .pc-stat {
+    background-color: rgb(7, 34, 37);
+    color: rgb(255, 229, 219);
+    // width: 2.5ch;
+    padding-right: 0.2ch;
+    border-radius: 0.4ch;
+    text-align: center;
+    font-weight: 900;
+    display: inline-block;
+    margin-bottom: 0.4ch;
+
+    font-family: consolas, monospace;
+    font-size: 1.4em;
+  }
+  .pc-combat::before {
+    content: 'COM ';
+    font-weight: 500;
+
+    background-color: rgb(43, 43, 43);
+    border-radius: 0.4ch;
+    margin-right: 0.2ch;
+    padding: 0 0.2ch;
+    z-index: -1;
+    display: inline-block;
+  }
+  .pc-dex::before {
+    content: 'DEX ';
+    font-weight: 500;
+
+    background-color: rgb(43, 43, 43);
+    border-radius: 0.4ch;
+    margin-right: 0.2ch;
+    padding: 0 0.2ch;
+    z-index: -1;
+    display: inline-block;
+  }
+  .pc-int::before {
+    content: 'INT ';
+    font-weight: 500;
+
+    background-color: rgb(43, 43, 43);
+    border-radius: 0.4ch;
+    margin-right: 0.2ch;
+    padding: 0 0.2ch;
+    z-index: -1;
+    display: inline-block;
+  }
+  .pc-luck::before {
+    content: 'LCK ';
+    font-weight: 500;
+
+    background-color: rgb(43, 43, 43);
+    border-radius: 0.4ch;
+    margin-right: 0.2ch;
+    padding: 0 0.2ch;
+    z-index: -1;
+    display: inline-block;
+  }
+  .pc-sta::before {
+    content: 'STM ';
+    font-weight: 500;
+
+    background-color: rgb(43, 43, 43);
+    border-radius: 0.4ch;
+    margin-right: 0.2ch;
+    padding: 0 0.2ch;
+    z-index: -1;
+    display: inline-block;
+  }
+  .pc-str::before {
+    content: 'STR ';
+    font-weight: 500;
+
+    background-color: rgb(43, 43, 43);
+    border-radius: 0.4ch;
+    margin-right: 0.2ch;
+    padding: 0 0.2ch;
+    z-index: -1;
+    display: inline-block;
+  }
+  .pc-trait {
+    font-family: consolas, monospace;
+    font-size: 1.2em;
+    background-color: rgb(106, 161, 143);
+    display: inline-block;
+    color: black;
+    padding: 0.2ch 0.5ch;
+    border-radius: 0.4ch;
+    font-weight: 600;
+  }
+  .pc-desc {
+    margin-top: 1ch;
+  }
+}

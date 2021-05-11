@@ -112,7 +112,7 @@ body {
   }
 }
 .screen-content {
-  margin: 0.3ch;
+  // margin: 0.3ch; // this is the wrong place for tis
   height: 52ch;
   overflow: scroll;
   overflow-x: hidden;
@@ -243,4 +243,44 @@ body {
   .pc-desc {
     margin-top: 1ch;
   }
+}
+
+.playlist {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 100%, 0.05);
+
+
+  .playing {
+    background-color: rgba(255, 255, 255, 0.11);
+  }
+  li {
+    list-style: none;
+    padding: 0 .5em .5em;
+    box-shadow: 0 5px 15px inset hsla(0, 0%, 100%, 0.10), 0 2px 5px inset hsla(0, 0%, 0%, 0.25);
+    position: relative;
+  }
+  li + li {
+    // border-top: 1px solid;
+    padding-top: .5em;
+  }
+  .artist {
+    // color: rgb(209, 130, 130);
+    margin-top: -.50em;
+    display: block;
+    font-size: .8em;
+    color: hsla(0, 0%, 100%, 0.50);
+  }
+  .title {
+    // color: rgb(126, 199, 126);
+    display: block;
+  }
+  .btn-play {
+    font-style: normal;
+    font-size: 1.6em;
+    position: absolute;
+    top: 14%;
+    right: 1ch;
+  }
+
 }
